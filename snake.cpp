@@ -11,7 +11,7 @@ using namespace std;
 
 // Graphics live in ../graphics relative to this C++ folder.
 // Change this if you copy the executable next to a graphics/ folder.
-static const string GFX = "../graphics/";
+static const string GFX = "graphics/";
 
 const int cell_size = 40;
 const int cell_number = 20;
