@@ -1,6 +1,3 @@
-// Snake game - C++ / raylib port of snake.py
-// Keeps the same structure: Snake, Fruit and Main classes.
-
 #include "raylib.h"
 #include <vector>
 #include <string>
@@ -9,8 +6,6 @@
 
 using namespace std;
 
-// Graphics live in ../graphics relative to this C++ folder.
-// Change this if you copy the executable next to a graphics/ folder.
 static const string GFX = "graphics/";
 
 const int cell_size = 40;
@@ -245,8 +240,7 @@ int main() {
             main_game.update();
             last_update = now;
         }
-
-        // input (prevents reversing, same as the python version)
+        
         if (!y_axis) {
             if (IsKeyPressed(KEY_UP)) {
                 main_game.snake.direction = {0, -1};
